@@ -7,12 +7,36 @@ body{
     font-family: "Poppins",sans-serif;
     font-size: 15px;
 }
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+}
 .container{
     width:1200px;
     margin:0 auto;
 }
+.btn{
+    min-width: 200px;
+    height:50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #DB2512;
+    transition: background-color .2s ease;
+}
+.btn:hover{
+    background-color: #a13a2f;
+}
+/* Header */
 .header{
-    background-color: #000;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 6;
 }
 .header__block{
     width:20%;
@@ -27,12 +51,19 @@ body{
 .nav{
     display: flex;
 }
+.header__logo{
+    display: inline-block;
+}
+.header__logo img{
+    height: 65px;
+}
 .nav__link{
     margin-right:35px;
     color:#fff;
     font-weight: 600;
     text-decoration: none;
     position: relative;
+    text-transform: uppercase;
 }
 .nav__link::after{
     content:"";
@@ -66,6 +97,10 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     margin-right:8px;
+    transition: color .3s ease;
+}
+.header__lng-link:hover{
+    color:#fff;
 }
 .header__lng-link.active{
     color: #fff;    
@@ -73,3 +108,76 @@ body{
 .header__lng-link:last-child{
     margin-right: 0;
 }
+
+/* end of Header */
+
+/* Intro */
+/* End Intro */
+.intro{
+    background: url(img/road.jpg)center no-repeat;
+    background-size: cover;
+  
+   
+}
+/* .intro::after{
+    content:"";
+    width:100%;
+    height: 100%;
+    background-color: #000 ;
+    opacity: .2;
+    position: absolute;
+    top:0;
+    right:0;
+
+} */
+.intro__content{
+    height: 750px;
+    display: flex;
+    align-items: center;
+    
+}
+.intro-block{
+    z-index:5;
+}
+.intro__title{
+    max-width:790px;
+    color:#fff;
+    font-size:40px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+
+/* info */
+.info{
+transform: translateY(-50%);
+}
+.info__wrapper{
+    display: flex;
+    margin: 0 -10px;
+}
+.info__block{
+    width:33.33%;
+    padding:0 10px;
+}
+.info__item{
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,.25);
+    padding:40px;
+} 
+.info__img{
+    margin-bottom: 20px;
+}
+.info__img img{
+    height: 30px;
+}
+.info__title{
+    font-size: 18px;
+    margin-bottom: 15px;
+    letter-spacing:.15em;
+}
+.info__text{
+ font-size: 18px;
+ color: #878787
+}
+/* end of info */
