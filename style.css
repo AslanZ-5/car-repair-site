@@ -292,6 +292,8 @@ transform: translateY(-50%);
 }
 .about__wrapper{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .about__block{
     max-width: 505px;
@@ -315,4 +317,7 @@ color:#fff
 }
 .about__link:hover{
     text-decoration:none;
+}
+.about__img{
+    width: 513px;
 }
