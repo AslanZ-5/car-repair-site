@@ -321,3 +321,23 @@ color:#fff
 .about__img{
     width: 513px;
 }
+
+/* process */
+.process__title{
+    font-size: 148px;
+    font-weight: 900;
+    line-height: 222px;
+    color:#000;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.process__subtitle{
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    text-align: center;
+} 
+/* end of process */
